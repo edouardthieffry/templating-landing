@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Firebase Hosting</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<script id="templateType" type="text/x-handlebars-template">
+
+    {{#each items}}
+    <div data-target="{{type}}">
+        <h1>{{type}}</h1>
+        <div class="img-bg" style="background:url('img/{{img}}')">
+        </div>
+    </div>
+    {{/each}}
+    <pre id="formContainer">
+
+    </pre>
+</script>
+
+<body>
+    <main>
+        <form>
+            <input id="txtEmail" type="email" placeholder="Email">
+            <input id="txtPassword" type="password" placeholder="Password">
+            <div id="btnLogin" class="btn btn-action">Login in</div>
+        </form>
+        <div id="backoffice" class="hide">
+            <div id="header">
+                <h1 id="logo"></h1>
+                <div id="logout">logout</div>
+            </div>
+            <div id="mainBO">
+                <nav>
+                    <ul>
+                        <li>dashboard</li>
+                        <li class="active">templating</li>
+                        <li>couleur</li>
+                        <li>mediatheque</li>
+                    </ul>
+                </nav>
+                <div id="container">
+                    <div id="templatingContainer">
+                        <div id="colLeft">
+                            <div id="addSection">add</div>
+                            <div id="listeType">
+                            </div>
+                        </div>
+                        <div id="colRight">
+                    <pre id="object">
+
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+</html>

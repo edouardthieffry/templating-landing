@@ -8,4 +8,9 @@ $(function () {
         messagingSenderId: "239269448680"
     };
     firebase.initializeApp(config);
+
+    let database = firebase.database().ref('templates');
+    let templateList = database.child('templateList');
+
+    console.log(templateList);
 });
