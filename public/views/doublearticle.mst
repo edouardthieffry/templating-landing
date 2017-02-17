@@ -1,0 +1,14 @@
+<h1>title</h1>
+<div id="articleContainer" class="layout-{{structure.alignementArticle}}">
+    <article class="layout-{{structure.alignementInArticle}}">
+        <img src="{{articles.article1.url}}"/>
+        <h3>{{articles.article1.title}}</h3>
+        <p class="text-fonctionality">{{articles.article1.paragraphe}}</p>
+    </article>
+    <article class="layout-{{structure.alignementInArticle}}">
+        <img src="{{articles.article2.url}}"/>
+        <h3>{{articles.article2.title}}</h3>
+        <p class="text-fonctionality">{{articles.article2.paragraphe}}</p>
+    </article>
+</div>
+<a href="/dashboard" class="sp-button-pink">lien vers la page</a>

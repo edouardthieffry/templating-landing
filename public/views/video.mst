@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+<div id="play" class="sp-button play">
+    <span>
+
+    </span>
+</div>

@@ -114,9 +114,10 @@
                 console.log('click');
                 object = {
                     type: 'video',
-                    title:''+titleVideo+'',
-                    url:''+urlVideo+''
+                    title:''+titre+'',
+                    url:''+videoUrl+''
                 };
+                console.log(object);
                templateList.push(object);
                 break;
             case 'doubleArticle':
